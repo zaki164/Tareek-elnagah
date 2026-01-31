@@ -4,24 +4,24 @@ const TableSection = () => {
   const { t } = useTranslation()
 
   const data = [
-    { name: "محمد زنفل", value: 6 },
-    { name: "محمد شوقي", value: 7 },
-    { name: "أيمن", value: 8 },
-    { name: "كمال", value: 9 },
-    { name: "أحمد الجمال", value: 10 },
-    { name: "محمود رمضان", value: 12 },
-    { name: "عمر", value: 13 },
-    { name: "عبد الله", value: 5 },
-    { name: "أحمد معتز", value: 20 },
-    { name: "محمد عبد الله", value: 30 },
-    { name: "البونز", value: 60 },
-    { name: "مصطفي", value: 50 },
-    { name: "طه", value: 32 },
-    { name: "محمود الجمال", value: 22 },
-    { name: "طلعت", value: 46 },
-    { name: "هشام", value: 77 },
-    { name: "عمرو", value: 25 },
-    { name: "زكي", value: 4 },
+    { name: "محمد زنفل", value: 25 },
+    { name: "محمد شوقي", value: 20 },
+    { name: "أيمن", value: 25 },
+    { name: "كمال", value: 12 },
+    { name: "أحمد الجمال", value: 2 },
+    { name: "محمود رمضان", value: 10 },
+    { name: "عمر", value: 15 },
+    { name: "عبد الله", value: 15 },
+    { name: "محمد عبد الله", value: 12 },
+    { name: "زكي", value: 25 },
+    { name: "هشام", value: 12 },
+    { name: "طلعت", value: 0 },
+    { name: "عمرو", value: 0 },
+    { name: "مصطفي", value: 0 },
+    { name: "طه", value: 0 },
+    { name: "محمود الجمال", value: 0 },
+    { name: "معتز", value: 0 },
+    { name: "البونز", value: 0 },
   ]
 
   return (
@@ -42,8 +42,8 @@ const TableSection = () => {
           </thead>
           <tbody>
             {
-              data?.sort((a, b) => b.value - a.value).map((ele, i) => (
-                <tr key={ele?.name} className={`table-body ${i === 0 ? "bg-[#df7f0a]" : i === 1 ? "bg-[#226d6e]" : i === 2 ? "bg-[#293e3f]" : "bg-lightBg2"}`}>
+              data?.sort((a, b) => b.value - a.value).map((ele, i, arr) => (
+                <tr key={ele?.name} className={`table-body ${i === arr.length - 1 || ele.value === 0 ? "bg-redColor" : i === 0 ? "bg-[#df7f0a]" : i === 1 ? "bg-[#226d6e]" : i === 2 ? "bg-[#293e3f]" : "bg-lightBg2"}`}>
                   <td>{i + 1}</td>
                   <td>{ele?.name}</td>
                   <td>{ele?.value}</td>
