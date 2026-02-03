@@ -18,8 +18,8 @@ const TableSection = () => {
     { name: "طلعت", value: 25 },
     { name: "البونز", value: 40 },
     { name: "محمود الجمال", value: 15 },
+    { name: "عمرو", value: 2 },
     { name: "معتز", value: 0 },
-    { name: "عمرو", value: 0 },
     { name: "مصطفي", value: 0 },
     { name: "طه", value: 0 },
   ]
