@@ -4,15 +4,15 @@ const TableSection = () => {
   const { t } = useTranslation()
 
   const data = [
-    { name: "محمد زنفل", value: 100 },
-    { name: "أيمن", value: 100 },
-    { name: "زكي", value: 100 },
-    { name: "محمد شوقي", value: 80 },
-    { name: "كمال", value: 64 },
-    { name: "أحمد الجمال", value: 67 },
+    { name: "محمد زنفل", value: 115 },
+    { name: "أيمن", value: 115 },
+    { name: "زكي", value: 115 },
+    { name: "محمد شوقي", value: 95 },
+    { name: "كمال", value: 79 },
+    { name: "أحمد الجمال", value: 82 },
     { name: "محمود رمضان", value: 75 },
     { name: "عمر", value: 60 },
-    { name: "عبد الله", value: 82 },
+    { name: "عبد الله", value: 97 },
     { name: "محمد عبد الله", value: 37 },
     { name: "هشام", value: 46 },
     { name: "طلعت", value: 25 },
