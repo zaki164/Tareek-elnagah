@@ -12,7 +12,7 @@ const TableSection = () => {
     { name: "كمال", value: 91 },
     { name: "أحمد الجمال", value: 137 },
     { name: "محمود رمضان", value: 90 },
-    { name: "عمر", value: 60 },
+    { name: "عمر", value: 72 },
     { name: "محمد عبد الله", value: 57 },
     { name: "هشام", value: 46 },
     { name: "طلعت", value: 25 },
