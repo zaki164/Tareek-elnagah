@@ -5,10 +5,10 @@ import { Home, PageNotFound } from "../Pages";
 const Router = () => {
   return (
     <Routes>
-      <Route element={<Layout />}>
-        <Route path="/" element={<Home />} />
-        <Route path="*" element={<PageNotFound />} />
-      </Route>
+      {/* <Route element={<Layout />}> */}
+      <Route path="/" element={<Home />} />
+      <Route path="*" element={<PageNotFound />} />
+      {/* </Route> */}
     </Routes>
   );
 };
